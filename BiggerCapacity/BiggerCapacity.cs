@@ -145,8 +145,10 @@ namespace BiggerCapacity
                             ApplyStorage(__instance, newCap);
                             break;
                         case CapacityTarget.FuelTank:
+                            ApplyFuelTanks(__instance, newCap);
                             break;
                         case CapacityTarget.Consumer:
+                            ApplyConsumer(__instance, newCap);
                             break;
                     }
 
